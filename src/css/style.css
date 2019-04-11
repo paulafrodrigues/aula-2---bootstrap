@@ -6,11 +6,14 @@ body {
 }
 
 a, p{
-    color:#5E747F;
+    color:#ad903a;
 }
 
+.bg-dark{
+    background-color: #415d43!important;
+}
 .navbar-dark .navbar-brand, .nav-link {
-    color: #7B9E87;
+    color: #ad903a!important;
 }
 
 .about, .contact {
@@ -83,12 +86,12 @@ a, p{
 /* css curriculo */
 
 .pills-tab, .nav, .mb-3{
-    background-color: #343a40;
+    background-color: #415d43!important;
 }
 
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
     color: #fff;
-    background-color: #7B9E87;
+    background-color: #415d43!important;
     }
 
 .nav-link.disabled {
@@ -123,6 +126,7 @@ a, p{
 .education{
     padding: 10%;
     font-weight: bolder;
+    background-color: #415d43;
 }
 
 .text-section_education{
@@ -138,14 +142,14 @@ a, p{
     padding: 10%;
     text-align: center;
     margin: 30px 0;
+    border: solid;
 }
 /* css habilidades */
 
 .skills {
     
     padding: 30px;
-    border: solid;
-    border-color: #415d43;
+    
 }
 
 .title-section-skills{

@@ -3,7 +3,7 @@ let email = document.querySelector("#email");
 let telefone = document.querySelector("#tel");
 let mensagem = document.querySelector("#mensagem");
 
-const botao = document.querySelector(".btn-primary");
+const botao = document.querySelector("#enviar");
 
 botao.addEventListener('click', function(evento){
     evento.preventDefault();
@@ -18,7 +18,7 @@ botao.addEventListener('click', function(evento){
             (email.value=== undefined || 
              email.value=== null ||
              email.value.trim()=== "" || 
-             email.value.length<0){
+             email.value.indexOf('@')===-1){
              email.focus();
              alert('Preencha o campo e-mail corretamente!')
              return false;
@@ -34,7 +34,7 @@ botao.addEventListener('click', function(evento){
             (mensagem.value=== undefined ||
             mensagem.value=== null ||
             mensagem.value.trim()=== "" ||
-            mensagem.value.length>=10){
+            mensagem.value.length<=10){
             mensagem.focus();
             alert('Preencha a sua mensagem!')
             return false;
